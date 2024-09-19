@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motos R</title>
+    <link rel="stylesheet" href="estilo/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<script>
+function inicio(){
+	var contenido1=document.getElementById("contenido1");
+	if(contenido1.style.display=="none"){
+		<!--Div visible-->
+		document.getElementById("contenido1").style.display="block";
+		<!--Div ocultos-->
+
+		document.getElementById("contenido2").style.display="none";
+		document.getElementById("contenido3").style.display="none";
+		document.getElementById("contenido4").style.display="none";
+		document.getElementById("contenido5").style.display="none";
+		document.getElementById("contenido6").style.display="none";
+	}
+}
+function quieneSomos(){
+	var contenido2=document.getElementById("contenido2");
+	if(contenido2.style.display=="none"){
+		<!--Div Visible-->
+		document.getElementById("contenido2").style.display="block";
+		<!--div ocultos-->
+		document.getElementById("contenido1").style.display="none";
+		document.getElementById("contenido3").style.display="none";
+		document.getElementById("contenido4").style.display="none";
+		document.getElementById("contenido5").style.display="none";
+		document.getElementById("contenido6").style.display="none";
+		}
+}
+
+function soporte(){
+	var contenido3=document.getElementById("contenido3");
+	if(contenido3.style.display=="none"){
+		<!--Div Visible-->
+		document.getElementById("contenido3").style.display="block";
+		<!--div ocultos-->
+		document.getElementById("contenido1").style.display="none";
+		document.getElementById("contenido2").style.display="none";
+		document.getElementById("contenido4").style.display="none";
+		document.getElementById("contenido5").style.display="none";
+		document.getElementById("contenido6").style.display="none";
+		}
+}
+
+function productos(){
+	var contenido4=document.getElementById("contenido4");
+	if(contenido4.style.display=="none"){
+		<!--Div Visible-->
+		document.getElementById("contenido4").style.display="block";
+		<!--div ocultos-->
+		document.getElementById("contenido1").style.display="none";
+		document.getElementById("contenido2").style.display="none";
+		document.getElementById("contenido3").style.display="none";
+		document.getElementById("contenido5").style.display="none";
+		document.getElementById("contenido6").style.display="none";	
+	}
+}
+function contactos(){
+	var contenido5=document.getElementById("contenido5");
+	if(contenido5.style.display=="none"){
+		<!--Div Visible-->
+		document.getElementById("contenido5").style.display="block";
+		<!--div ocultos-->
+		document.getElementById("contenido1").style.display="none";
+		document.getElementById("contenido2").style.display="none";
+		document.getElementById("contenido3").style.display="none";
+		document.getElementById("contenido4").style.display="none";
+		document.getElementById("contenido6").style.display="none";	
+	}
+}
+function pagos(){
+	var contenido6=document.getElementById("contenido6");
+	if(contenido6.style.display=="none"){
+		<!--Div Visible-->
+		document.getElementById("contenido6").style.display="block";
+		<!--div ocultos-->
+		document.getElementById("contenido1").style.display="none";
+		document.getElementById("contenido2").style.display="none";
+		document.getElementById("contenido3").style.display="none";
+		document.getElementById("contenido4").style.display="none";
+		document.getElementById("contenido5").style.display="none";	
+	}
+}
+
+
+</script>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="ckbox">
+            <label for="ckbox" class="drawer">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </label>
+            <h1>Motos R</h1>
+            <ul class="menu-box">
+                <li><a href="javascript:inicio();" class="fa fa-home" > Inicio</a></li>
+                <li><a href="javascript:quieneSomos();" class="fa fa-users "> Quienes somos</a></li>
+                <li><a href="javascript:soporte();" class="fa fa-clock-o"> servicios</a></li>
+                <li><a href="javascript:productos();" class="fa fa-laptop"> Productos</a></li>
+                <li><a href="javascript:contactos();" class="fa fa-envelope-open"> Contacto</a></li>
+                <li><a href="javascript:pagos();" class="fa fa-credit-card"> Pagos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+		<!---------------------Inicio------------------------------------------>
+        <div class="content" id="contenido1" style="display:block;">
+            <h1>BIENVENIDOS A MOTOREPUESTOS RIVAS</h1>
+            <img src="imagenes/marques-cbr-1000-gp.jpg"><br> 
+			 
+        </div>
+		<!----------------------Quienes somos------------------------------------>
+		 <iframe id="contenido2" class="iframeProductos" src="Quienes-Somos.html" frameborder="0" style="display:none;"> </iframe>
+	
+		<!--------------------Soporte 24H----------------------------------------->
+				<iframe id="contenido3" class="iframeProductos" src="servicios.html" frameborder="0" style="display:none;"> </iframe>
+	
+		<!---------------------Productos------------------------------------------->
+       
+             
+		
+			<iframe id="contenido4" class="iframeProductos" src="productos.html" frameborder="0" style="display:none;"> </iframe>
+		
+	
+		<!-------------------------Contactos--------------------------------------->
+		<div class="content" id="contenido5" style="display:none;">
+            <h1>Contactos</h1>
+			<p><img id="logos" src="img/WhatsApp-logo.jpg">7009 5954</p>
+			  <p><img id="logos" src="img/facebook.jpg">www.facebook.com</p>
+			 			 
+        </div>
+		<!----------------------------Pgos--------------------------------------->
+		<iframe id="contenido6" class="iframeProductos" src="formularioPagos.html" frameborder="0" style="display:none;"> </iframe>
+		
+		
+	</main>
+
+    <footer>
+	    <a href="http://motorepuestosrivas.atwebpages.com/">Mi sitio en awardspace</a>
+        <br><p>TODOS LOS DERECHOS RESERVADOS © INSTITUTO NACIONAL DE SENSUNTEPEQUE</p>
+		<P>Jes&uacute;s Antonio Rivas Hernandez</P>
+    </footer>
+</body>
+
+</html>
